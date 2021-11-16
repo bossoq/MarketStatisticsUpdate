@@ -42,7 +42,7 @@ export const updateMAIIndex = async () => {
     ).length
     if (maiTableLength && divTableLength) {
       if (maiTableLength === divTableLength - 1) {
-        for (let i = 1; i < maiTableLength + 1; i++) {
+        for (let i = 1; i < maiTableLength + 1 - 329; i++) {
           const [month, year]: string[] = maiHTMLDOM(
             `body > table:nth-child(2) > thead:nth-child(2) > tr:nth-child(${i}) > td:nth-child(1)`
           )

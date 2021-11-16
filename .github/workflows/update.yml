@@ -30,6 +30,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Update Data
         env:
-          REACT_APP_SUPABASEURL: ${{ secrets.SUPABASEURL }}
-          REACT_APP_SUPABASEAPI: ${{ secrets.SUPABASEAPI }}
+          SUPABASEURL: ${{ secrets.SUPABASEURL }}
+          SUPABASEAPI: ${{ secrets.SUPABASEAPI }}
         run: "yarn install && yarn start"

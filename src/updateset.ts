@@ -115,15 +115,17 @@ export const updateSETIndex = async () => {
       .insert(fetchSET.slice(lastSETIndex + 1))
     if (error === null) {
       console.log(
-        `[INFO] [${getTimestamp()}] Update Market Index ${
+        `[INFO] [${getTimestamp()}] Update SET Market Index ${
           fetchSET.length - lastSETIndex - 1
         } records`
       )
     } else {
-      console.log(`[WARN] [${getTimestamp()}] Unable to update Market Index`)
+      console.log(
+        `[WARN] [${getTimestamp()}] Unable to update SET Market Index`
+      )
     }
   } else {
-    console.log(`[INFO] [${getTimestamp()}] No New Market Index Data`)
+    console.log(`[INFO] [${getTimestamp()}] No New SET Market Index Data`)
   }
 
   const calSETReturn = (): SETReturnOfficial[] => {
@@ -193,14 +195,16 @@ export const updateSETIndex = async () => {
       .insert(calSET.slice(lastSETReturnIndex + 1))
     if (error === null) {
       console.log(
-        `[INFO] [${getTimestamp()}] Update Market Return ${
+        `[INFO] [${getTimestamp()}] Update SET Market Return ${
           calSET.length - lastSETReturnIndex - 1
         } records`
       )
     } else {
-      console.log(`[WARN] [${getTimestamp()}] Unable to update Market Return`)
+      console.log(
+        `[WARN] [${getTimestamp()}] Unable to update SET Market Return`
+      )
     }
   } else {
-    console.log(`[INFO] [${getTimestamp()}] No New Market Return Data`)
+    console.log(`[INFO] [${getTimestamp()}] No New SET Market Return Data`)
   }
 }

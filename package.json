@@ -1,0 +1,20 @@
+{
+  "name": "MarketStatisticsUpdate",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "repository": "git@github.com:bossoq/MarketStatisticsUpdate.git",
+  "author": "Kittipos Wajakajornrit",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/app.ts",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@types/node": "^16.11.7",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.4.0"
+  }
+}

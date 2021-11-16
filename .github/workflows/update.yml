@@ -32,5 +32,4 @@ jobs:
         env:
           REACT_APP_SUPABASEURL: ${{ secrets.SUPABASEURL }}
           REACT_APP_SUPABASEAPI: ${{ secrets.SUPABASEAPI }}
-        run: "yarn install"
-        run: "yarn start"
+        run: "yarn install && yarn start"
